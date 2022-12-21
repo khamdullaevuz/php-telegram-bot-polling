@@ -6,4 +6,15 @@
 php handle.php
 ```
 
-all codes in telegram/core.php file
+add telegram bot api key to `config.php`
+
+```php
+<?php
+
+class Config
+{
+    const API_KEY = "YOUR_API_KEY";
+}
+```
+
+write code in `update.php`
