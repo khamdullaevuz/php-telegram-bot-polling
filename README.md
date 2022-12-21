@@ -2,11 +2,7 @@
 
 ## usage
 
-```bash
-php handle.php
-```
-
-add telegram bot api key to `config.php`
+create `config.php` and add telegram bot api key
 
 ```php
 <?php
@@ -16,5 +12,9 @@ class Config
     const API_KEY = "YOUR_API_KEY";
 }
 ```
-
 write code in `update.php`
+## run bot
+
+```bash
+php handle.php
+```
