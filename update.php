@@ -1,6 +1,6 @@
 <?php
 use khamdullaevuz\telegram\Method;
-Trait Proccess
+trait Update
 {
     use Method;
     public function processUpdate($update): void

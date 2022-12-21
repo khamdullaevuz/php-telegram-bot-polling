@@ -4,7 +4,7 @@ namespace khamdullaevuz\telegram;
 
 class Polling
 {
-    use \Proccess;
+    use \Update;
     public function getUpdates($offset)
     {
         $url = 'https://api.telegram.org/bot' . \Config::API_KEY . '/getUpdates?offset=' . $offset;
