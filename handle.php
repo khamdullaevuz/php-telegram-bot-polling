@@ -1,9 +1,5 @@
 <?php
 
-spl_autoload_register(function ($name){
-    $name = str_replace(["khamdullaevuz", "\\"], ["", "/"], $name);
-    $name = __DIR__ . $name . ".php";
-    require $name;
-});
+require 'loader.php';
 
 (new \khamdullaevuz\telegram\Polling())->handle();
