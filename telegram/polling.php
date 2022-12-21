@@ -2,11 +2,12 @@
 
 namespace khamdullaevuz\telegram;
 
-class Polling extends Proccess
+class Polling
 {
+    use \Proccess;
     public function getUpdates($offset)
     {
-        $url = 'https://api.telegram.org/bot' . config::API_KEY . '/getUpdates?offset=' . $offset;
+        $url = 'https://api.telegram.org/bot' . \Config::API_KEY . '/getUpdates?offset=' . $offset;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);

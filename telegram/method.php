@@ -6,7 +6,7 @@ trait Method
 {
     public function request($method, $params)
     {
-        $url = 'https://api.telegram.org/bot' . config::API_KEY . '/' . $method;
+        $url = 'https://api.telegram.org/bot' . \Config::API_KEY . '/' . $method;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_POST, 1);

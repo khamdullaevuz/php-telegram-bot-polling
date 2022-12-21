@@ -1,7 +1,6 @@
 <?php
-namespace khamdullaevuz\telegram;
-
-abstract class Proccess
+use khamdullaevuz\telegram\Method;
+Trait Proccess
 {
     use Method;
     public function processUpdate($update): void
